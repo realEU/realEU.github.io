@@ -154,6 +154,7 @@ header_pages:
   - categories.html
   - tags.html
   - about.md
+  - free-for-dev.md
 
 # Page default value
 # defaults:
