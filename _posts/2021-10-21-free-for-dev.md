@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Free For Dev
-subtitle: A post that contains information about useful stuffs for devs.
+subtitle: A post that contains informations about useful stuffs for devs.
 categories: markdown
-tags: [FreeForDevs, UsefullStuffs]
+tags: [FreeForDevs, UsefulStuffs]
 ---
 
 # Free-For-Dev
