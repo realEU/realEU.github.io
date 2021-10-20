@@ -1,5 +1,5 @@
 ---
-layout: free-for-dev
+layout: post
 title: Free For Dev
 ---
 
