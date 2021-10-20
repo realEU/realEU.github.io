@@ -1,3 +1,8 @@
+---
+layout: free-for-dev
+title: Free For Dev
+---
+
 # free-for-dev
 
 Developers and Open Source authors now have a massive amount of services offering free tiers, but it can be hard to find them all to make informed decisions.
@@ -1489,6 +1494,6 @@ HTML Themes and UI Kits to create your applications faster!
 
 **[⬆ back to top](#table-of-contents)**
 
-•**©[ripienaar](https://github.com/ripienaar)**
+• **©[ripienaar](https://github.com/ripienaar)**
 
-•**Real Source: [free-for-dev](https://github.com/ripienaar/free-for-dev)
+• **Real Source: [free-for-dev](https://github.com/ripienaar/free-for-dev)**
