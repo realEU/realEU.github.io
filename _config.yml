@@ -185,8 +185,8 @@ header_pages:
 paginate: 5
 
 # Disqus comments
-# disqus:
-shortname: "xdune"
+disqus:
+  shortname: "xdune"
 
 # Gitment comments
 # gitment:
