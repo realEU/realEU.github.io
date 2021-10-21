@@ -13,6 +13,10 @@
   img: https://cdn.countryflags.com/thumbs/india/flag-400.png
   text: Hindi
 
+- lang: it
+  img: https://cdn.countryflags.com/thumbs/italy/flag-400.png
+  text: Italian
+
 - lang: fr
   img: https://cdn.countryflags.com/thumbs/france/flag-400.png
   text: French
