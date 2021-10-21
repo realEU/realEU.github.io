@@ -3,19 +3,17 @@ layout: about
 title: Contact
 ---
 
-<!-- modify this form HTML and place wherever you want your form -->
-<form
-  action="https://formspree.io/f/mvodnbao"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="_replyto">
-  </label><br>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
+<html>
+  <head>
+    <title>reCAPTCHA demo: Simple page</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </head>
+  <body>
+    <form action="https://formspree.io/f/mvodnbao" method="POST">
+      <input type="email" name="email" placeholder="email@example.com" />
+      <div class="g-recaptcha" data-sitekey="6LcI5eYcAAAAAGePZ0AH-szDdC5p4b312OGS3ka1"></div> <!-- replace with your recaptcha SITE key not secret key -->
+      <br/>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
