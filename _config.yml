@@ -155,7 +155,7 @@ header_pages:
   - categories.html
   - tags.html
   - about.md
-  - contact.php
+  - contact.html
 
 # Page default value
 # defaults:
