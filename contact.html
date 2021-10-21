@@ -3,19 +3,30 @@ layout: default
 title: Contact
 ---
 
-<html>
-  <head>
-    <title>Contact Me</title><br>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-  </head>
-    <title>Contact Me</title>
-  <body>
-    <form action="https://formspree.io/f/mvodnbao" method="POST">
-      <input type="email" name="email" placeholder="email@example.com" /><br>
-      <textarea name="message" placeholder="Your message"></textarea><br>
-      <div class="g-recaptcha" data-sitekey="6LcI5eYcAAAAAGePZ0AH-szDdC5p4b312OGS3ka1"></div> <!-- replace with your recaptcha SITE key not secret key -->
-      <br/>
-      <input type="submit" value="Submit">
-    </form>
-  </body>
-</html>
+{{ define "main" }}
+
+{{ "<!-- contact -->" | safeHTML }}
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="section-title text-primary">{{ .Title }}</h2>
+        {{ .Content }}
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <form action="https://formspree.io/f/mvodnbao" method="POST">
+          <input type="text" id="name" name="name" placeholder="Name" class="form-control mb-4 shadow rounded-0">
+          <input type="email" id="mail" name="mail" placeholder="Email" class="form-control mb-4 shadow rounded-0">
+          <input type="text" id="subject" name="subject" placeholder="Subject"
+            class="form-control mb-4 shadow rounded-0">
+          <textarea name="message" id="message" placeholder="Message"
+            class="form-control mb-4 shadow rounded-0"></textarea>
+          <div class="g-recaptcha" data-sitekey="6LcI5eYcAAAAAGePZ0AH-szDdC5p4b312OGS3ka1"></div><br>
+          <button type="submit" value="send" class="btn btn-primary">{{ i18n "send" }}</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+{{ "<!-- /contact -->" | safeHTML }}
+
+{{ end }}
