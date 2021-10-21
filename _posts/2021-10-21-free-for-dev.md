@@ -1498,4 +1498,4 @@ HTML Themes and UI Kits to create your applications faster!
 **[⬆ back to top](#table-of-contents)**
 
 ## Credits
-• This post was ported from **[free-for-dev](https://github.com/ripienaar/free-for-dev)**!
+  * This post was ported from **[free-for-dev](https://github.com/ripienaar/free-for-dev)**!
