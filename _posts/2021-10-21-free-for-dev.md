@@ -20,9 +20,6 @@ This list is the result of Pull Requests, reviews, ideas and work done by 900+ p
 
 *NOTE:* This list is only for as-a-Service offerings, not for self-hosted software. For a service to be eligible it has to offer a free tier and not just a free trial. If the free tier is time-bucketed it has to be for at least a year. We also consider the free tier from a security perspective, so SSO is fine but I will not accept services that restrict TLS to paid-only tiers.
 
-## Credits
-• This post was ported from **[free-for-dev](https://github.com/ripienaar/free-for-dev)**!
-
 Table of Contents
 =================
 
@@ -1499,3 +1496,6 @@ HTML Themes and UI Kits to create your applications faster!
   * [SmallDev.tools](https://smalldev.tools/) — A free tool for developers that allows you to Encode/Decode various formats, Minify HTML/CSS/Javascript, Beautify, Generate Fake/Testing real like dataset in JSON/CSV & multiple other formats and many more features. With a delightful interface.
 
 **[⬆ back to top](#table-of-contents)**
+
+## Credits
+• This post was ported from **[free-for-dev](https://github.com/ripienaar/free-for-dev)**!
