@@ -186,7 +186,7 @@ paginate: 5
 
 # Disqus comments
 # disqus:
-#   shortname: "Your Disqus username"
+shortname: "xdune"
 
 # Gitment comments
 # gitment:
