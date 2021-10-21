@@ -9,6 +9,10 @@
   img: https://cdn.countryflags.com/thumbs/iran/flag-400.png
   text: Persian
 
+- lang: hi
+  img: https://cdn.countryflags.com/thumbs/india/flag-400.png
+  text: Hindi
+
 - lang: fr
   img: https://cdn.countryflags.com/thumbs/france/flag-400.png
   text: French
