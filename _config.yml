@@ -40,7 +40,7 @@ author: 𖤍 Λℓσηє 𖤍
 #   "Copyright (c) 2017-{currentYear} <a href="https://example.com">{author}</a>"
 #   "Copyright © 2017-2021 Foobar"
 #
-copyright: "Copyleft (cleft) 2020-{currentYear} {author}"
+copyright: "Copyright (c) 2020-{currentYear} {author}"
 
 description: >- # this means to ignore newlines until "baseurl:"
   This is a very personal blog. I don't write blogs for anyone, but
