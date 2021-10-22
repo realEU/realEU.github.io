@@ -1,77 +1,77 @@
-const resultEl = document.getElementById('result')
-const lengthEl = document.getElementById('length')
-const uppercaseEl = document.getElementById('uppercase')
-const lowercaseEl = document.getElementById('lowercase')
-const numbersEl = document.getElementById('numbers')
-const symbolsEl = document.getElementById('symbols')
-const generateEl = document.getElementById('generate')
-const clipboardEl = document.getElementById('clipboard')
+var newgame = document.getElementById('newGame');
+var newhead1 = document.getElementById('newhead');
+var inputBox = document.getElementById('input1');
+var prevGuess = document.querySelector('.guesses');
+var guessRem= document.getElementById('remainingGuess');
+var numGuesses = 1;
 
-const randomFunc = {
-    lower: getRandomLower,
-    upper: getRandomUpper,
-    number: getRandomNumber,
-    symbol: getRandomSymbol
-}
-
-clipboardEl.addEventListener('click', () => {
-    const textarea = document.createElement('textarea')
-    const password = resultEl.innerText
-
-    if(!password) { return }
-
-    textarea.value = password
-    document.body.appendChild(textarea)
-    textarea.select()
-    document.execCommand('copy')
-    textarea.remove()
-    alert('Password copied to clipboard!')
-})
-
-generateEl.addEventListener('click', () => {
-    const length = +lengthEl.value
-    const hasLower = lowercaseEl.checked
-    const hasUpper = uppercaseEl.checked
-    const hasNumber = numbersEl.checked
-    const hasSymbol = symbolsEl.checked
-
-    resultEl.innerText = generatePassword(hasLower, hasUpper, hasNumber, hasSymbol, length)
-})
-
-function generatePassword(lower, upper, number, symbol, length) {
-    let generatedPassword = ''
-    const typesCount = lower + upper + number + symbol
-    const typesArr = [{lower}, {upper}, {number}, {symbol}].filter(item => Object.values(item)[0])
+function startGame(){
+    var random1 = Math.round(Math.random()*100);
+    random = random1;
     
-    if(typesCount === 0) {
-        return ''
+    function compare(x,y){
+        if(x===y){
+            newhead1.classList.add('heading1');
+            newhead1.innerHTML="You Guessed Correctly!!";
+            inputBox.setAttribute('disabled', '');
+            newgame.classList.add('heading1');
+            newgame.innerHTML="Start New Game!";       
+        }
+        else if (x < y){
+            newhead1.classList.add('heading1');
+            newhead1.innerHTML="Too low! Guess again!";
+        }
+        else if (x > y){
+            newhead1.classList.add('heading1');
+            newhead1.innerHTML="Too high! Guess again!";
+        }
     }
 
-    for(let i = 0; i < length; i += typesCount) {
-        typesArr.forEach(type => {
-            const funcName = Object.keys(type)[0]
-            generatedPassword += randomFunc[funcName]()
-        })
+    function limitnum(){
+        newhead1.classList.add('heading1');
+        newhead1.innerHTML="Oh! You couldn't guess the right number!!! The real number was " + `${random}`;
+        inputBox.setAttribute('disabled', '');
+        newgame.classList.add('heading1');
+        newgame.innerHTML="Start New Game!";
+    }
+    
+    function displayGuesses(){
+        numGuesses++;
+        guessRem.innerHTML = `${11 - numGuesses}  `;
+        if (numGuesses === 11){
+            limitnum();
+        }
     }
 
-    const finalPassword = generatedPassword.slice(0, length)
+    function myfunc(event){
+        event.preventDefault();
+        var input12 = inputBox.value;
+        input2=Number(input12);
+        if(input2===0){
 
-    return finalPassword
+        }
+        if((input2<1 || input2>100) && input2 !== 0){
+            alert('please enter a valid number!');
+        }
+        else if(input2 !== 0){
+            compare(input2, random);
+            inputBox.value="";
+            prevGuess.innerHTML+=`${input2} `;
+            displayGuesses();
+        }
+    }
+    document.getElementById('button').addEventListener('click',myfunc);
 }
+startGame();
 
-function getRandomLower() {
-    return String.fromCharCode(Math.floor(Math.random() * 26) + 97)
-}
-
-function getRandomUpper() {
-    return String.fromCharCode(Math.floor(Math.random() * 26) + 65)
-}
-
-function getRandomNumber() {
-    return String.fromCharCode(Math.floor(Math.random() * 10) + 48)
-}
-
-function getRandomSymbol() {
-    const symbols = '!@#$%^&*(){}[]=<>/,.'
-    return symbols[Math.floor(Math.random() * symbols.length)]
-}
+document.getElementById('newGame').addEventListener('click',function(){
+    startGame();
+    newgame.innerHTML="";
+    newgame.classList.remove('heading1');
+    newhead1.innerHTML="";
+    newhead1.classList.remove('heading1');
+    numGuesses = 1;
+    guessRem.innerHTML = `${11 - numGuesses}  `;
+    prevGuess.innerHTML = "";
+    inputBox.removeAttribute('disabled');
+})
