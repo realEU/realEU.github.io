@@ -1,77 +1,40 @@
-var newgame = document.getElementById('newGame');
-var newhead1 = document.getElementById('newhead');
-var inputBox = document.getElementById('input1');
-var prevGuess = document.querySelector('.guesses');
-var guessRem= document.getElementById('remainingGuess');
-var numGuesses = 1;
+const cat_btn = document.getElementById('cat_btn');
+const dog_btn = document.getElementById('dog_btn');
+const fox_btn = document.getElementById('fox_btn');
+const cat_result = document.getElementById('cat_result');
+const dog_result = document.getElementById('dog_result');
+const fox_result = document.getElementById('fox_result');
 
-function startGame(){
-    var random1 = Math.round(Math.random()*100);
-    random = random1;
-    
-    function compare(x,y){
-        if(x===y){
-            newhead1.classList.add('heading1');
-            newhead1.innerHTML="You Guessed Correctly!!";
-            inputBox.setAttribute('disabled', '');
-            newgame.classList.add('heading1');
-            newgame.innerHTML="Start New Game!";       
-        }
-        else if (x < y){
-            newhead1.classList.add('heading1');
-            newhead1.innerHTML="Too low! Guess again!";
-        }
-        else if (x > y){
-            newhead1.classList.add('heading1');
-            newhead1.innerHTML="Too high! Guess again!";
-        }
-    }
+cat_btn.addEventListener('click', getRandomCat);
+dog_btn.addEventListener('click', getRandomDog);
+fox_btn.addEventListener('click', getRandomFox);
 
-    function limitnum(){
-        newhead1.classList.add('heading1');
-        newhead1.innerHTML="Oh! You couldn't guess the right number!!! The real number was " + `${random}`;
-        inputBox.setAttribute('disabled', '');
-        newgame.classList.add('heading1');
-        newgame.innerHTML="Start New Game!";
-    }
-    
-    function displayGuesses(){
-        numGuesses++;
-        guessRem.innerHTML = `${11 - numGuesses}  `;
-        if (numGuesses === 11){
-            limitnum();
-        }
-    }
-
-    function myfunc(event){
-        event.preventDefault();
-        var input12 = inputBox.value;
-        input2=Number(input12);
-        if(input2===0){
-
-        }
-        if((input2<1 || input2>100) && input2 !== 0){
-            alert('please enter a valid number!');
-        }
-        else if(input2 !== 0){
-            compare(input2, random);
-            inputBox.value="";
-            prevGuess.innerHTML+=`${input2} `;
-            displayGuesses();
-        }
-    }
-    document.getElementById('button').addEventListener('click',myfunc);
+function getRandomCat() {
+	fetch('https://aws.random.cat/meow')
+		.then(res => res.json())
+		.then(data => {
+			cat_result.innerHTML = `<img src=${data.file} alt="cat" />`
+		});
 }
-startGame();
 
-document.getElementById('newGame').addEventListener('click',function(){
-    startGame();
-    newgame.innerHTML="";
-    newgame.classList.remove('heading1');
-    newhead1.innerHTML="";
-    newhead1.classList.remove('heading1');
-    numGuesses = 1;
-    guessRem.innerHTML = `${11 - numGuesses}  `;
-    prevGuess.innerHTML = "";
-    inputBox.removeAttribute('disabled');
-})
+function getRandomDog() {
+	fetch('https://random.dog/woof.json')
+		.then(res => res.json())
+		.then(data => {
+			// console.log(data);
+			if(data.url.includes('.mp4')) {
+				getRandomDog();
+			}
+			else {
+				dog_result.innerHTML = `<img src=${data.url} alt="dog" />`;
+			}
+		});
+}
+
+function getRandomFox() {
+	fetch('https://randomfox.ca/floof/')
+		.then(res => res.json())
+		.then(data => {
+			fox_result.innerHTML = `<img src=${data.image} alt="fox" />`
+		});
+}
