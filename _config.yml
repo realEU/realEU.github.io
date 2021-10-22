@@ -154,7 +154,7 @@ header_pages:
   - archives.html
   - categories.html
   - tags.html
-  - [Tic-Tac-Toe](https://chetnagrover00.github.io/TicTacToe)
+  - tic-tac-toe/ttt.html
   - about.md
   - contact.html
 
