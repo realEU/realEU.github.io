@@ -1,4 +1,4 @@
-[![Size](https://img.shields.io/github/repo-size/realeu/realeu.github.io?style=flat-square&color=orangered)]
+![Size](https://img.shields.io/github/repo-size/realeu/realeu.github.io?style=flat-square&color=black)
 
 <div align="center">
   <br>
