@@ -1,11 +1,15 @@
-<!-- Smartsupp Live Chat script -->
 <script type="text/javascript">
-var _smartsupp = _smartsupp || {};
-_smartsupp.key = '688e51da534dd0d15ceb557ccd5e3cefb4451f87';
-window.smartsupp||(function(d) {
- var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
- s=d.getElementsByTagName('script')[0];c=d.createElement('script');
- c.type='text/javascript';c.charset='utf-8';c.async=true;
- c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
-})(document);
+  (function() {
+    window.sib = { equeue: [], client_key: "ez3fm71fbg8soq8f3u3bezgp" };
+    /* OPTIONAL: email to identify request*/
+    // window.sib.email_id = 'example@domain.com';
+    /* OPTIONAL: to hide the chat on your script uncomment this line (0 = chat hidden; 1 = display chat) */
+    // window.sib.display_chat = 0;
+    // window.sib.display_logo = 0;
+    /* OPTIONAL: to overwrite the default welcome message uncomment this line*/
+    // window.sib.custom_welcome_message = 'Hello, how can we help you?';
+    /* OPTIONAL: to overwrite the default offline message uncomment this line*/
+    // window.sib.custom_offline_message = 'We are currently offline. In order to answer you, please indicate your email in your messages.';
+    window.sendinblue = {}; for (var j = ['track', 'identify', 'trackLink', 'page'], i = 0; i < j.length; i++) { (function(k) { window.sendinblue[k] = function(){ var arg = Array.prototype.slice.call(arguments); (window.sib[k] || function() { var t = {}; t[k] = arg; window.sib.equeue.push(t);})(arg[0], arg[1], arg[2]);};})(j[i]);}var n = document.createElement("script"),i = document.getElementsByTagName("script")[0]; n.type = "text/javascript", n.id = "sendinblue-js", n.async = !0, n.src = "https://sibautomation.com/sa.js?key=" + window.sib.client_key, i.parentNode.insertBefore(n, i), window.sendinblue.page();
+  })();
 </script>
