@@ -11,15 +11,19 @@ blog what I have learnt or thought in my daily life.
 I am a self-motivated and largely self-taught professional who likes to
 dig deep into problems and architect elegant solutions.
 
-When I am not at the keyboard, you will likely find me surfing or lounging
-on the beach with a good book. If you are interested in knowing more, read my
+When I am not at the keyboard, you will likely find me riding bicycle. If you are interested in knowing more, read my
 articles or take a look at my pictures.
 
-![](https://ghchart.rshah.org/jeffreytse)
+![](https://ghchart.rshah.org/realeu)
 
 I also develop and maintain open-source projects that boost developer
-productivity. In addition, I practice playing piano and guitar in my spare
+productivity. In addition, I read books in my spare
 time. Besides that, I also fall in love with photography. Welcome to exchange
 ideas with me.
 
-Roadmap: 👨‍💻 -> 🎸 -> 🎹 -> 📸
+Roadmap: 👨‍💻 -> 🎧 -> 📖 -> 🚴‍♂️
+
+BTW, feel free to join me on the below chats on Telegram...
+
+» [`@GangstersGroupp`](https://telegram.dog/GangstersGroupp)
+» [`@UltroidSpam`](https://telegram.dog/UltroidSpam)
