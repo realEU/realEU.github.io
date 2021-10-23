@@ -1,3 +1,8 @@
+---
+layout: about
+title: Games
+---
+
 # Games
 
 ## Hextris
