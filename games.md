@@ -13,9 +13,7 @@ title: Games
 Hextris is an addictive puzzle game inspired by Tetris. 
 
 You can play **hextris** by **[Clicking Here](https://deviser.ga/hextris)**!
-
 [<img src="https://i.ibb.co/27R3DQ1/hextris.png" width="500"/>](https://deviser.ga/hextris)
-
 ```
 Source Code: https://github.com/Hextris/hextris
 ```
