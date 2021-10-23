@@ -1,3 +1,5 @@
+[![Size](https://img.shields.io/github/repo-size/realeu/realeu.github.io?style=flat-square&color=orangered)]
+
 <div align="center">
   <br>
 
