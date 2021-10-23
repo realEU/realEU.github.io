@@ -151,10 +151,11 @@ theme_color: snowwhite
 # this and add the path to the pages in order as they should show up
 header_pages:
   - index.html
-  - archives.html
-  - categories.html
-  - tags.html
-  - about.md
+  - widgets/archives.html
+  - widgets/categories.html
+  - widgets/tags.html
+  - widgets/games.md
+  - widgets/about.md
 
 # Page default value
 # defaults:
