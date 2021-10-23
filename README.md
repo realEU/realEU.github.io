@@ -1,4 +1,4 @@
-![Size](https://img.shields.io/github/repo-size/realeu/realeu.github.io?style=flat-square&color=black)
+![Size](https://img.shields.io/github/repo-size/realeu/realeu.github.io?style=flat-square&color=black) ~ `Just to know the limit...`
 
 <div align="center">
   <br>
