@@ -2,6 +2,7 @@
 layout: about
 title: Games
 ---
+![games](/images/41CDE775-4D85-46B1-8583-06097AC8E5CC.png "games")
 ## Games
 > In addition with viewing my blog, you can also entertain yourself by the given games...🙃
 ### Hextris
