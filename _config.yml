@@ -150,12 +150,11 @@ theme_color: snowwhite
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
 header_pages:
-  - index.html
-  - archives.html
-  - categories.html
-  - tags.html
-  - about.md
-  - contact/contact.html
+  - index
+  - archives
+  - categories
+  - tags
+  - about
 
 # Page default value
 # defaults:
