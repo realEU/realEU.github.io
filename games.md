@@ -17,3 +17,16 @@ Hextris is an addictive puzzle game inspired by Tetris.
 ```hextris!
 Source Code: https://github.com/Hextris/hextris
 ```
+
+### Flappy Bird
+
+![flappybird](/images/F5AACA6E-0F3B-4260-9AA6-5FED43A3B20F.png "flappybird")
+
+Hextris is an addictive puzzle game inspired by Tetris. 
+
+[<img src="https://i.ibb.co/wM4wKLV/PNG-image.png" width="500"/>](https://deviser.ga/hextris)
+
+```hextris!
+Source Code: https://github.com/Hextris/hextris
+```
+
