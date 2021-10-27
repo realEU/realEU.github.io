@@ -1,0 +1,1 @@
+Sitemap: https://deviser.ga/jekyll-theme-yat/sitemap.xml
