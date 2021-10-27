@@ -20,7 +20,7 @@ Source Code: https://github.com/Hextris/hextris
 
 ### Flappy Bird
 
-![flappybird](/images/F5AACA6E-0F3B-4260-9AA6-5FED43A3B20F.png "flappybird")
+![flappybird](/images/FAE66DDF-0A11-4CFE-BBDF-24E9A6A3CA92.png "flappybird")
 
 Hextris is an addictive puzzle game inspired by Tetris. 
 
@@ -29,4 +29,3 @@ Hextris is an addictive puzzle game inspired by Tetris.
 ```hextris!
 Source Code: https://github.com/Hextris/hextris
 ```
-
