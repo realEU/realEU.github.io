@@ -10,7 +10,7 @@ title: Games
 
 ![hextris](/images/F5AACA6E-0F3B-4260-9AA6-5FED43A3B20F.png "hextris")
 
-Hextris is a simple reincarnation of Tetris in hexagon form. Meaning that colored lines will fall from six sides towards a central hexagon, and you need to rotate the hexagon to get the colors to match. When you eventually can't keep up, and the hexagon fills with colored lines, the game is over. 
+**Hextris** is a simple reincarnation of Tetris in hexagon form. Meaning that colored lines will fall from six sides towards a central hexagon, and you need to rotate the hexagon to get the colors to match. When you eventually can't keep up, and the hexagon fills with colored lines, the game is over. 
 
 [<img src="https://i.ibb.co/wM4wKLV/PNG-image.png" width="500"/>](https://deviser.ga/hextris)
 
