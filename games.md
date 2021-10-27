@@ -26,6 +26,6 @@ The game, **Flappy Bird** is a side-scroller where the player controls a bird, a
 
 [<img src="https://i.ibb.co/89wWsky/66430-D13-D20-C-4-AC6-841-A-EA27-E7-CA563-D.png" width="500"/>](https://deviser.ga/flappybird)
 
-```flappy bird!
+```flappy-bird!
 Source Code: https://github.com/nebez/floppybird
 ```
