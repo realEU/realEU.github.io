@@ -24,7 +24,7 @@ Source Code: https://github.com/Hextris/hextris
 
 The game, **Flappy Bird** is a side-scroller where the player controls a bird, attempting to fly between columns of green pipes without hitting them. 
 
-[<img src="https://i.ibb.co/VH4fDtM/19-D206-B2-856-E-4-F67-889-D-3-D7-C89-C1-DB02.png" width="500"/>](https://deviser.ga/flappybird)
+[<img src="https://i.ibb.co/89wWsky/66430-D13-D20-C-4-AC6-841-A-EA27-E7-CA563-D.png" width="500"/>](https://deviser.ga/flappybird)
 
 ```flappy bird!
 Source Code: https://github.com/nebez/floppybird
