@@ -1,10 +1,11 @@
-#---
-#layout: post
-#title: Table example
-#subtitle:
-#categories: example
-#tags: [Table]
-#---
+#
+---
+layout: post
+title: Table example
+subtitle:
+categories: example
+tags: [Table]
+---
 
 ## Table example as below
 
